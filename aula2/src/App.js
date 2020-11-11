@@ -1,12 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Identificacao from './componentes/Identificacao'
-
-function ticTac(){
-  return new Date().toLocaleTimeString();
-}
-
-
+import {Footer, Header, Left} from './componentes/Footer'
 
 function App() {
   return (
@@ -20,6 +15,9 @@ function App() {
           Edit <code>Seu </code>ano 2023.
         </p>
       </header>
+      <Footer dados = { {mes:10, ano:2023} }/>
+      <Header palabra = {'exito'}/>
+      <Left/>
     </div>
   );
 }
